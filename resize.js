@@ -1,4 +1,7 @@
 function MaintainAspectRatioOf(canvas) {
+  canvas.style.position = 'absolute';
+  canvas.style.transformOrigin = 'top left';
+
   function resize() {
     let widthScale = window.innerWidth / canvas.width;
     let heightScale = window.innerHeight / canvas.height;
